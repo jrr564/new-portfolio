@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+   
+}
+.nav-item {
+    background-color: white;
+    color: crimson;
+}
+
+#about {
+    border-right: 3px solid crimson;
+}
+
+.container {
+    
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 13px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-shadow: 
+    -2px 1px 5px lightslategray, 2px -1px 5px lightslategray;
+}
+#name {    
+    
+    padding: 5px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+}
