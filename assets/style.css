@@ -1,32 +1,29 @@
 body {
     background-color: white;
-    font-family: 'Work Sans', sans-serif;
-   
+    font-family: 'Montserrat', sans-serif;
 }
 .nav-item {
     background-color: white;
     color: crimson;
 }
 
-#about {
-    border-right: 3px solid crimson;
+#top-link {
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    color: #96858F;
 }
 
-.container {
-    
-    font-family: 'Work Sans', sans-serif;
-    color: black;
-}
 
 h1 {
     font-size: 70px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
-    letter-spacing: 13px;
+    letter-spacing: 20px;
     margin-top: 80px;
     margin-bottom: 40px;
     text-shadow: 
-    -2px 1px 5px lightslategray, 2px -1px 5px lightslategray;
+    -2px 1px 5px slategray, 2px -1px 20px lightslategray;
+    opacity: 50;
 }
 #name {    
     
@@ -39,4 +36,20 @@ h1 {
     border-radius: 15px;
     border: 1px solid white;
     background-color: whitesmoke;
+    opacity: .7;
+}
+.center-block {
+    
+}
+
+.links {
+    border: none;
+    color: #96858F;
+}
+
+.link-list {
+    margin-top: 60px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
 }
