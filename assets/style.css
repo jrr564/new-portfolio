@@ -1,55 +1,74 @@
 body {
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    background-color:#ededed;
+    font-family: 'Montserrat', sans-serif;    
 }
-.nav-item {
-    background-color: white;
-    color: crimson;
-}
-
-#top-link {
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
-    color: #96858F;
-}
-
 
 h1 {
-    font-size: 70px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
-    letter-spacing: 20px;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    text-shadow: 
-    -2px 1px 5px slategray, 2px -1px 20px lightslategray;
-    opacity: 50;
-}
-#name {    
-    
-    padding: 5px;
-    line-height: 80px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: black;
-    border-radius: 15px;
-    border: 1px solid white;
-    background-color: whitesmoke;
-    opacity: .7;
-}
-.center-block {
-    
+	display: inline;
+    position: relative;
+	font: 6rem 'Work Sans', sans-serif;
+	letter-spacing: 20px;
+    color: rgba(150, 150, 150,0.3);
+    text-shadow: -10px -1px 6px rgba(150, 150, 150,0.2);
 }
 
-.links {
-    border: none;
-    color: #96858F;
+h1:after {
+	position: absolute; left: 10px; top: 1px;
+    color: rgba(150,150,150,0.3); 
+}
+
+
+#Jonathan:after {
+	content: "CHRISTINE";
+}
+
+#Ridewood:after {
+	content: "GWILLIM";
+}
+
+
+#name {        
+    padding: 5px;
+    line-height: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 100px 10px 30px 10px;
 }
 
 .link-list {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-right: 20px;
     font-family: 'Montserrat', sans-serif;    
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.links {
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 12px;
+    opacity: .7;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-links:hover {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+a:focus {
+    outline-color: 
+ }
