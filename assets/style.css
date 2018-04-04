@@ -1,10 +1,12 @@
 body {
     /* background-color: white; rgb(60,253,183) */
     /* #fc5956 #455afb rgb(69,90,251) */
-    background: linear-gradient(90deg,  rgba(255,255,255, 0.05)  50%, rgb(60,253,183) 50%);
+    background: linear-gradient(90deg, white 49%, rgba(60,253,183, 1)50%);
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500; 
-/*     
+    /* background: rgba(252,89,86, .7); */
+   
+/*     #fc5956
 #ca2d36   */
     
 }
@@ -21,11 +23,12 @@ body {
 h1 {
 	display: inline;
     position: relative;
-	font: 7rem 'Work Sans', sans-serif;
+	font: 6rem 'Work Sans', sans-serif;
     letter-spacing: 16px;
     line-height: 90%;
-    color: rgba(133, 122, 122, 0.1);
-    text-shadow: -2px 8px 100px rgba(133, 122, 122, 0.1);
+    color: rgba(150,150,150, 0.4);
+    text-shadow: -2px 8px 100px rgba(150,150,150, 0.4);
+    
     
 }
 
@@ -34,19 +37,18 @@ span, h1 {
 }
 
 #name {      
-      
+    border: 10px solid rgba(255,255,255, .1);
     padding: 0px;
-    background-color: #ffffff;
     width: 100%;
     position: relative;
-    right: 40px;
+    right: 25px;
     margin: 90px 0px 0px 0px;
-    /* background-color: white; */
+    background-color: white;
 }
 
 h1:after {
 	position: absolute; left: 8px; top: -2px; 
-    color: rgba(133, 122, 122, 0.1);
+    color: rgba(150,150,150, 0.4);
 }
 
 #Jonathan:after {
@@ -57,15 +59,19 @@ h1:after {
 	content: "RIDEWOOD";
 }
 
-.hello {
-    text-align: right;
-}
-
 .about {
     background-color: white;
     /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 50%, rgba(72, 109, 218, .9) 10%); */
-    color: #455afb;
-    text-align: right;
+    color: black;
+    text-align: center;
+    border: 160px solid lightgrey;
+}
+
+.about-body {
+    letter-spacing: 6px;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 100px;
 }
 
 img{
@@ -74,14 +80,8 @@ img{
     margin-bottom: 8px; 
 }
 
-.animation-target {
-    -webkit-animation: animation 23000ms linear both;
-    animation: animation 15000ms linear both;
-  }
-
-
 .link-list {
-    margin: 150px 20px;
+    margin: 120px 20px;
     font-family: 'Montserrat', sans-serif;    
     font-size: 18px;
 }
@@ -89,6 +89,7 @@ img{
 .links {
     font-weight: 600;
     letter-spacing: 5px;
+    margin-top: 60px;
     /* margin-left: 10px; */
     margin-right: 10px;
     color: rgb(0, 0, 0);
@@ -112,13 +113,14 @@ img{
 .projects {
     height: 1000px;
     width: 100%;
-    background: repeating-linear-gradient(
-    135deg,
-    white,
-    white 10px,
-    whitesmoke 10px,
-    whitesmoke 20px);
+    background: white;
     
+    background: repeating-linear-gradient(
+        135deg,
+        white,
+        white 10px,
+        whitesmoke 10px,
+        whitesmoke 20px);
 }
 
 h2 {
@@ -126,7 +128,7 @@ h2 {
     text-align: right;
     font: 7rem 'Work Sans', sans-serif;
     font-weight: 900; 
-    color:   rgb(190,197,251);
+    color:   rgba(252,113,93, 1);
     background-color: none;  
    opacity: 1;
     /* margin-bottom: 30px;  */
@@ -138,6 +140,7 @@ h2 {
      */
 
 }
+
 
 .card {
     float: left;
@@ -161,14 +164,14 @@ h5 {
 
 @media only screen and (min-width: 993px) {
     #name {
-    width: 90%;
+    width: 75%;
     };
 }
 
  @media only screen and (max-width: 992px) {
     h1 {
         font-size: 6rem;
-        right: 150px;
+        right: 60px;
     }
     #name {
         margin-left: none;
@@ -235,7 +238,10 @@ a, a:link, a:hover, a:focus{
 }
 
   
-  /* Generated with Bounce.js. Edit at https://goo.gl/msT3zb */
+.animation-target {
+    -webkit-animation: animation 25000ms linear both;
+    animation: animation 25000ms linear both;
+  }
   
   @-webkit-keyframes animation { 
     0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
@@ -284,8 +290,8 @@ a, a:link, a:hover, a:focus{
 
 
   .animation-target2 {
-    -webkit-animation: animation2 30000ms linear both;
-    animation: animation2 30000ms linear both;
+    -webkit-animation: animation2 25000ms linear both;
+    animation: animation2 25000ms linear both;
   }
   
   /* Generated with Bounce.js. Edit at https://goo.gl/ybctA9 */
