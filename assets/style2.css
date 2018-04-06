@@ -44,10 +44,11 @@ span, h1 {
       
     padding: 10px;
     background-color: white;
-    width: 95%;
+    width: 100%;
     position: relative;
     right: 25px;
     margin: 90px 0px 0px 0px;
+    border-radius: 20px;
     /* background-color: white; */
 }
 
@@ -115,7 +116,7 @@ img{
     
 }
 
-.projects {
+.writing {
     height: 1000px;
     width: 100%;
     background: repeating-linear-gradient(
@@ -129,20 +130,26 @@ img{
 
 h2 {
     padding: 40px 40px 0px;
-    text-align: right;
+    text-align: left;
     font: 7rem 'Work Sans', sans-serif;
     font-weight: 900; 
     color:   rgba(0,0,0,.8);
     background-color: none;  
    opacity: 1;
     /* margin-bottom: 30px;  */
-    /* background-color: white; */
+    /* background: linear-gradient(90deg, white  49%, rgba(252,113,93, 1)50%); */
     /* padding: 10px 40px; */
     letter-spacing: 5px;
-    /* position: relative;
-    top: -40px;
-     */
+}
 
+.projects {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(131,168,209); 
+}
+
+.project-body {
+    background-color: rgb(131,168,209);
 }
 /* 
 h3 {
@@ -153,21 +160,31 @@ h3 {
 .card {
     float: left;
     width: 50%;
-    padding: .75rem;
-    margin-bottom: 2rem;
+    padding: 10px;
+    margin-bottom: 5px;
     border: 0;
     border-radius: 0px;
-    background-color: rgba(255,255,255, .1);
+    background-color: rgb(101,187,126);
 }
 
-.card-body {
-    background-color: white;
+.card-title{
+    background-color: tomato;
 }
+
+/* .card-body {
+    background-color: white;
+} */
 
 h5 {
     text-align: center;
     /* background-color: black;
     color: white; */
+}
+
+@media only screen and (min-width: 1200px) {
+    #name {
+    width: 95%;
+    };
 }
 
 @media only screen and (min-width: 993px) {
