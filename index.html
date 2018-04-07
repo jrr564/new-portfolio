@@ -30,16 +30,6 @@
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
-            <!-- <button class= "item hidden">
-                        <a href="https://github.com/jrr564/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                   <!--  -->
-
-
-            <!-- <a href="mailto:Jon.Ridewood@gmail.com?Subject=So%20I%20saw%20your%20website">
-                        <i class="fas fa-envelope"></i>
-                    </a> -->
         </nav>
         <div class="container name">
             <div class="container-fluid center-block " id="name">
@@ -57,42 +47,30 @@
             <div class="row">
                 <div class="navbar-nav navbar-expand ml-auto center-block link-list">
                     <button class="hidden item links">
-                        <a href="https://github.com/jrr564/">PROJECTS</a>
+                        <a href="#projects">PROJECTS</a>
                     </button>
                     <!-- <button class="hidden item links">
                                         <a href="https://github.com/jrr564/">GITHUB</a>
                                     </button> -->
 
                     <button class="hidden item links">
-                        <a href="https://github.com/jrr564/">MEDIA</a>
+                        <a href="#writing">WRITING</a>
                     </button>
                     <button class="item hidden links">
-                        <a href="">ABOUT</a>
-                    </button>
-                    <button class="item hidden links">
-                        <a href="mailto:Jon.Ridewood@gmail.com?Subject=So%20I%20saw%20your%20website">EMAIL</a>
+                        <a href="#about">ABOUT</a>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="writing">
-        <div class="center-block">
-            <h2 class="writing-header">Writing</h2>
-            <div class="container">
-            </div>
-        </div>
-    </div>
-    <div class="projects">
+    <div id="projects" class="projects">
         <div class="center-block">
             <h2 class="project-header">PROJECTS</h2>
             <div class="project-body container">
                 <div class="card">
                     <div class="card-body">
-                        <img src="assets/images/dashboard.png" alt="placeholder image">
                         <h5 class="card-title">CONSTRUCTION MGMT</h5>
+                        <img src="assets/images/dashboard.png" alt="placeholder image">
                         <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
                             dolor sit o nec luctuspsum dolor sit o nec luctusIpsum orci.</p>
                         <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
@@ -101,9 +79,8 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <h4 class="card-title">CONSTRUCTION MGMT</h4>
                         <img src="assets/images/dashboard.png" alt="placeholder image">
-
-                        <h5 class="card-title">CONSTRUCTION MGMT</h5>
                         <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
                             dolor sit o nec luctuspsum dolor sit o nec luctusIpsum orci.</p>
                         <p class="card-text">Lorem ipsum dolor sit o nec lpsum dolor sit o nec luctuspsum dolor sit o nec luctuspsum dolor sit
@@ -113,7 +90,14 @@
             </div>
         </div>
     </div>
-    <div class="about row">
+    <div id="writing" class="writing">
+        <div class="center-block">
+            <h2 class="writing-header">Writing</h2>
+            <div class="container">
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about row">
         <div class="card-body about-body">
             <div class="about-text">
                 <h3 class="card-text">I'm a writer, editor</h3>
@@ -122,8 +106,12 @@
                 <h3 class="card-text"></h3>
             </div>
             <button class="links">
+                <a href="">RÈSUMÈ</a>
+            </button>
+            <button class="links">
                 <a href="mailto:Jon.Ridewood@gmail.com?Subject=So%20I%20saw%20your%20website">EMAIL ME</a>
             </button>
+
         </div>
 
     </div>
@@ -133,6 +121,19 @@
         $(document).ready(function () {
             $('.item').delay(3000).fadeIn('slow')
         })
+
+        $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1200);
+                    return false;
+                }
+            }
+        });
     </script>
 </body>
 

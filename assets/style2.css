@@ -1,7 +1,7 @@
 body {
     /* background-color: white; rgb(60,253,183) */
     /* #fc5956 #455afb rgb(69,90,251) */
-    background: linear-gradient(90deg, white  49%, rgba(252,113,93, 1)50%);
+    background: linear-gradient(90deg, white  47%, rgba(252,113,93, 1)50%);
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500; 
     /* background: rgba(252,89,86, .7); */
@@ -70,7 +70,7 @@ h1:after {
     /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 50%, rgba(72, 109, 218, .9) 10%); */
     color: black;
     text-align: center;
-    border: 160px solid lightgrey;
+    border: 140px solid lightgrey;
 }
 
 .about-body {
@@ -117,7 +117,7 @@ img{
 }
 
 .writing {
-    height: 1000px;
+    height: 800px;
     width: 100%;
     background: repeating-linear-gradient(
     135deg,
@@ -130,8 +130,8 @@ img{
 
 h2 {
     padding: 40px 40px 0px;
-    text-align: left;
-    font: 7rem 'Work Sans', sans-serif;
+    text-align: right;
+    font: 6rem 'Work Sans', sans-serif;
     font-weight: 900; 
     color:   rgba(0,0,0,.8);
     background-color: none;  
@@ -159,9 +159,9 @@ h3 {
 
 .card {
     float: left;
-    width: 50%;
+    width: 47%;
     padding: 10px;
-    margin-bottom: 5px;
+    margin:  10px;
     border: 0;
     border-radius: 0px;
     background-color: rgb(101,187,126);
@@ -206,6 +206,10 @@ h5 {
     .link-list{
         margin-top: 80px;
     }
+    .projects {
+        height: 1400px;
+    }
+
     .card {
         width: 100%;
     }
