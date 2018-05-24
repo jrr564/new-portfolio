@@ -1,14 +1,10 @@
-html, body {
+body {
     /* background-color: white; rgb(60,253,183) */
     /* #fc5956 #455afb rgb(69,90,251) */
      /* background: rgba(252,89,86, .7); */
      /* #fc5956 #ca2d36   */
     font-family: 'Montserrat', sans-serif; 
-    font-weight: 500;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    font-weight: 500;   
 }
 
 h1 {
@@ -26,62 +22,38 @@ span, h1 {
 }
 
 h2 {
+    padding: 40px 40px 0px;
     text-align: right;
     font: 6rem 'Work Sans', sans-serif;
     font-weight: 900; 
     color:   rgba(0,0,0,.8);
     background-color: none;  
     opacity: 1;
+    /* margin-bottom: 30px;  */
+    /* background: linear-gradient(90deg, white  49%, rgba(252,113,93, 1)50%); */
+    /* padding: 10px 40px; */
     letter-spacing: 5px;
 }
 
-h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 900;
-    color:   black;
-    background-color: none;  
-    opacity: 1;
-    line-height: 90%;
-    letter-spacing: 2px;
-}
 
-h4 {
-    font: 3rem 'Work Sans', sans-serif;
-    font-weight: 900; 
-    text-align: right;
-    color: black;
-}
-
-a, a:link, a:hover, a:focus{
-    
-    color: currentColor;
-}
-
-img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 8px; 
-}
 
 
 /* -----name section---- */
 
 .block {
-    background: linear-gradient(90deg, whitesmoke  47%, rgba(252,113,93, 1)50%);
-    height: 100px;
+    background: linear-gradient(90deg, whitesmoke  47%, rgba(253,104,102, .9)50%);
+    height: 150px;
     width: 100%;
 }
 .nameSection {
     width: 100%;
-    background: linear-gradient(90deg, whitesmoke  47%, rgba(252,113,93, 1)50%);
-    min-height: 90vh;
+    background: linear-gradient(90deg, whitesmoke  47%, rgba(252,113,93, .9)50%);
+    min-height: 550px;
    
 }
 .name {
     width: 80%;
-    position: relative;
-    down: -60px;
+
     
 }
 
@@ -93,7 +65,8 @@ img{
 }
 
 h1:after {
-	position: absolute; left: 1px; top: -2px; 
+    position: absolute; left: 1px; top: -2px;
+    
     
 }
 
@@ -125,12 +98,21 @@ h1:after {
 .sticky + .content {
   padding-top: 100px;
 }
+
+
+img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px; 
+}
+
 /* main page links */
 
 .link-list {
     margin: 120px 20px;
     font-family: 'Montserrat', sans-serif;    
     font-size: 18px;
+    margin-top: 600px;
 }
 
 .links {
@@ -148,24 +130,17 @@ h1:after {
 .links:hover {
     color: white !important;
     border-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0) !important;
+    background-color: rgb(0, 0, 0); !important;
     text-decoration: none !important;
-    transition: .5s;
 }
 
 .hidden {
     display: none;
     
 }
-/* S-------Section Header------ */
-
-.section-header{
-    padding: 20px 20px 0px;
-}
-
-/* -----Project SECTION ----*/
-#projects {
-    min-height: 100vh;
+/* WRITING SECTION */
+.writing {
+    height: 800px;
     width: 100%;
     background: repeating-linear-gradient(
     135deg,
@@ -173,133 +148,97 @@ h1:after {
     white 10px,
     whitesmoke 10px,
     whitesmoke 20px);
+    
 }
-
-#project-header {
-    background: repeating-linear-gradient(
-        135deg,
-        white,
-        white 10px,
-        whitesmoke 10px,
-        whitesmoke 20px);
-}
-
-.projectPanel {
+/* Project Section  */
+.projects {
+    height: 1000px;
     width: 100%;
-    color: white !important;
-    padding: 32px 2px 0px;
-    min-height: 200px;
+    background-color: rgb(131,168,209); 
 }
 
-#construction {
-    background-color: rgb(253,147,113);
+.project-body {
+    background-color: rgb(131,168,209);
 }
 
-#nba {
-    background-color: rgb(170,156,222);
+.card {
+    float: left;
+    width: 47%;
+    padding: 10px;
+    margin:  10px;
+    border: 0;
+    border-radius: 0px;
+    background-color: rgb(101,187,126);
 }
 
-#upkeep {
-    background-color: rgba(60,253,183, .8)
+.card-title{
+    margin: 200px;
 }
 
-/* -------Writing Section------- */
-#writing {
-    background-color:lightgrey;
-    min-height: 100vh;
-    color: black;
-    text-align: center;
-}
-
-.writing-examples {
-    border-bottom: 80px solid lightgrey;
-    border-left: 80px solid lightgrey;
-    border-right: 80px solid lightgrey;
-    min-height: 80vh;
+/* .card-body {
     background-color: white;
+} */
 
+.project-header {
+    text-align: center;
+    background-color: tomato;
+    padding: 20px;
+    width: 70%;
+    margin:auto;
+    vertical-align:middle;
+    /* background-color: black;
+    color: white; */
 }
 /* --------ABOUT SECTION--------- */
 
-
-#about {
-    min-height: 100vh;
-    width: 100%;
-    background: -webkit-linear-gradient(110deg, rgb(131,168,209) 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, tomato 70%, rgb(131,168,209) 70%);
-    background: -o-linear-gradient(10deg, rgb(131,168,209) 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, tomato 70%, rgb(131,168,209) 70%);
-    background: -moz-linear-gradient(110deg, rgb(131,168,209) 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, tomato 70%, rgb(131,168,209) 70%);
-    background: linear-gradient(110deg, rgb(131,168,209) 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, tomato 70%, rgb(131,168,209) 70%);
-    }
-    
+.about {
+    background-color: white;
+    background:  whitesmoke;
+    height: 100vmin;
+    color: black;
+    text-align: center;
+    border: 100px solid lightgrey;
 }
 
-#about-header {
-    text-align: right;
-    margin:auto;
-}
-
-#about-body {
-    padding: 30px;
-}
-
-.about-text {
-    margin: 10px;
-    width: 60%;
-    padding: 10px 20px;
+.about-body {
+    letter-spacing: 6px;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 100px;
 }
 
 
-.oval {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 35%;
-    height: 50%;
-    position: absolute;
-    border: none;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: rgb(94,187,133);
-    z-index: 0;
-  }
-
-
-/* -------Media Query----------- */
 @media only screen and (min-width: 993px) {
     #name {
-    width: 85%;  
+    width: 90%;  
     };
-}
 
- @media only screen and (max-width: 992px) {
     h1 {
-        font-size: 4.8rem;
-    }
-    h2{
-        font-size: 5rem;
+        font-size: 4.6rem;
     }
     #name {
         margin-left: none;
         padding-left: 20px;
+            
+
     }
     .link-list{
         margin-top: 80px;
     }
+    .projects {
+        height: 1400px;
+    }
 
+    .card {
+        width: 100%;
+    }
 
 }
 
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 4.4rem;
-    }
-    h4 {
-        font-size: 2.5rem;
+        font-size: 4.2rem;
     }
     .name {
         margin-left: none;
@@ -315,19 +254,11 @@ h1:after {
         width: 80%;
     }
 
-    .links {
+       .links {
     font-size: 14px;
     letter-spacing: 5px;
     border: 1.5px solid rgba(0, 0, 0, 0.6);;
     padding: 8px 8px;
-    }
-
-    .projectPanel {
-        min-height: 250px;
-    }
-    .oval {
-        width: 350px;
-        height: 250px;
     }
     
 }
@@ -336,14 +267,8 @@ h1:after {
     h1 {
         font-size: 3.5rem;
     }
-    h2 {
-        font-size: 4rem;
-    }
     #name {
         right: -60px;
-    }
-    h4 {
-        font-size: 2rem;
     }
     
 }
@@ -351,7 +276,10 @@ h1:after {
 
 /*  */
 
-/* -------ANIMATION------- */
+a, a:link, a:hover, a:focus{
+    text-decoration: none;
+    color: currentColor;
+}
 
 .animation-target2,  .animation-target {
     -webkit-animation: animation 100000ms linear both;
@@ -884,94 +812,3 @@ h1:after {
   
 
 
-  .hovereffect {
-    width: 100%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-  }
-  
-  .hovereffect .overlay {
-    position: absolute;
-    overflow: hidden;
-    width: 80%;
-    height: 80%;
-    left: 10%;
-    top: 10%;
-    border-bottom: 1px solid #FFF;
-    border-top: 1px solid #FFF;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(0,1);
-    -ms-transform: scale(0,1);
-    transform: scale(0,1);
-  }
-  
-  .hovereffect:hover .overlay {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-  
-  .hovereffect img {
-    display: block;
-    position: relative;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-  }
-  
-  .hovereffect:hover img {
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-    filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
-  }
-  
-  .hovereffect h2 {
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    background-color: transparent;
-    color: #FFF;
-    padding: 1em 0;
-    font-family: 'Montserrat', sans-serif; 
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-100%,0);
-    transform: translate3d(0,-100%,0);
-  }
-  
-  .hovereffect a, .hovereffect p {
-    color: #FFF;
-    padding: 1em 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
-  }
-  
-  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  .links:hover {
-    color: white !important;
-    border-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0) !important;
-    text-decoration: none !important;
-}
-
-
-  

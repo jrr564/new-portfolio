@@ -6,7 +6,9 @@
     <title>Index</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans:900|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
@@ -33,22 +35,19 @@
                 </div>
                 <div>
                 </div>
-                <div class="row">
-                    <div class="navbar-nav navbar-expand ml-auto center-block link-list">
-                        <button class="hidden item links">
-                            <a href="#projects">PROJECTS</a>
-                        </button>
-                        <!-- <button class="hidden item links">
-                                        <a href="https://github.com/jrr564/">GITHUB</a>
-                                    </button> -->
 
-                        <button class="hidden item links">
-                            <a href="#writing">WRITING</a>
-                        </button>
-                        <button class="item hidden links">
-                            <a href="#about">ABOUT</a>
-                        </button>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="ml-auto link-list">
+                    <button class="hidden item links">
+                        <a href="#projects">PROJECTS</a>
+                    </button>
+                    <button class="hidden item links">
+                        <a href="#writing">WRITING</a>
+                    </button>
+                    <button class="item hidden links">
+                        <a href="#about">ABOUT</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -67,58 +66,99 @@
                 </div>
             </nav>
         </div>
-        <div>
-            <div id="projects" class="projects">
-                <div class="center-block">
-                    <h2 class="">PROJECTS</h2>
-                    <div class="project-body">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="assets/images/dashboard.png" alt="placeholder image">
-                                <h4 class="card-title project-header">CONSTRUCTION MGMT</h4>
-                                <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
-                                    dolor sit o nec luctuspsum dolor sit o nec luctusIpsum orci.</p>
-                                <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
-                                    dolor sit o nec luctuspsum dolor sit o nec luctusIpsum orci.</p>
+        <div id="projects">
+            <div class="center-block">
+                <h2 class="section-header" id="project-header">Projects</h2>
+                <div class="row">
+                    <div id="nba" class="projectPanel col-sm-4">
+                        <h3>
+                            <a href="https://nba-transaction-mongod-scrape.herokuapp.com/">
+                                <span>NBA </span>
+                                <span>Transaction</span>
+                                <span>Scraper </span>
+                            </a>
+                        </h3>
+                        <div class="zoom hovereffect">
+                            <div class="mask flex-center rgba-red-strong">
+                                <h2>NBA Transaction Scraper is an app that scrapes recent NBA transactions from the CBS Sports
+                                    NBA Transaction page and saves them to a databse using MongoDB and Mongoose.</h2>
+                                <p>
+                                    <a href="https://github.com/jrr564/NBA-Transaction-Scraper">GITHUB</a> |
+                                    <a href="https://nba-transaction-mongod-scrape.herokuapp.com/">APP</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="assets/images/dashboard.png" alt="placeholder image">
-                                <h4 class="card-title project-header">CONSTRUCTION MGMT</h4>
-                                <p class="card-text">Lorem ipsum dolor sit o nec luctus et. psum dolor sit o nec luctuspsum dolor sit o nec luctuspsum
-                                    dolor sit o nec luctuspsum dolor sit o nec luctusIpsum orci.</p>
-                                <p class="card-text">Lorem ipsum dolor sit o nec lpsum dolor sit o nec luctuspsum dolor sit o nec luctuspsum dolor
-                                    sit o nec luctuspsum dolor sit o nec luctusuctus et. Ipsum orci.</p>
+                    </div>
+                    <input id="hidden" type="hidden" />
+                    <div id="upkeep" class="projectPanel col-sm-4">
+                        <h3>
+                            <a href="">UpKeep</a>
+                        </h3>
+                        <div class="zoom hovereffect">
+                            <div class="mask rgba-red-strong">
+                                <h2>Construction MGMT is a blah Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil
+                                    earum cum fugit, voluptates hic quam unde labore? Minima aut prum.</h2>
+                                <p>
+                                    <a href="#">LINK HERE</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="construction" class="projectPanel col-sm-4">
+                        <h3>
+                            <a href="">
+                                <span>Construction </span>
+                                <span>MGMT</span>
+                            </a>
+                        </h3>
+                        <div class="zoom hovereffect">
+                            <div class="mask flex-center rgba-red-strong">
+                                <h2>Construction MGMT is a blah Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil
+                                    earum cum fugit, voluptates hic quam unde labore? Minima aut prum.</h2>
+                                <p>
+                                    <a href="#">LINK HERE</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="writing" class="writing">
-                <div class="center-block">
-                    <h2 class="writing-header">Writing</h2>
-                    <div class="container">
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div id="writing">
+        <h2 class="section-header" id="writing-header">Writing</h2>
+        <div class="center-block">
+            <div class="writing-examples">
+
             </div>
-            <div id="about" class="about row">
-                <div class="card-body about-body">
-                    <div class="about-text">
-                        <h3 class="card-text">I'm a writer, editor</h3>
-                        <h3 class="card-text">& web developer</h3>
-                        <h3 class="card-text">in austin, tx</h3>
-                        <h3 class="card-text"></h3>
+        </div>
+    </div>
+    <div class="bg-spring" id="about">
+        <div class="center-block">
+            <div class="section-header" id="about-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="oval"></div>
+            <div id="about-body">
+                <div>
+                    <div class="col-sm-10 ml-auto about-text">
+                        <h4>I'm a writer</h4>
+                        <h4>+ editor</h4>
+                        <h4>+ web developer</h4>
+                        <h4>in austin, tx</h4>
                     </div>
-                    <button class="links">
-                        <a href="">RÈSUMÈ</a>
-                    </button>
-                    <button class="links">
-                        <a href="mailto:Jon.Ridewood@gmail.com?Subject=So%20I%20saw%20your%20website">EMAIL ME</a>
-                    </button>
-
+                    <div class="float-sm-right">
+                        <button class="links">
+                            <a href="">RÈSUMÈ</a>
+                        </button>
+                        <button class="links">
+                            <a href="mailto:Jon.Ridewood@gmail.com?Subject=So%20I%20saw%20your%20website">EMAIL ME</a>
+                        </button>
+                        <button class="links">
+                                <a href="https://github.com/jrr564/">GITHUB</a>
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
