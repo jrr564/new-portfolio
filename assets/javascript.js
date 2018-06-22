@@ -1,5 +1,37 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+// For a smooth scroll
+$('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
+  function() {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      if (target.length) {
+        $("html,body").animate(
+          {
+            scrollTop: target.offset().top
+          },
+          1200
+        );
+        return false;
+      }
+    }
+  }
+);
+
+//button delay
+$(document).ready(function() {
+  $(".item")
+    .delay(3000)
+    .fadeIn("slow");
+});
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {
+  myFunction();
+};
 
 // Get the header
 var header = document.getElementById("myHeader");
@@ -16,3 +48,8 @@ function myFunction() {
   }
 }
 
+$(document).ready(function() {
+  $(".item")
+    .delay(1000)
+    .fadeIn("slow");
+});
