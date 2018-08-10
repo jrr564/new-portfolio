@@ -64,6 +64,7 @@ h5 {
     text-align: left;
     position: relative;
     font-size: 17px;
+
     background-color: transparent;
     color: black;
     font-family: 'Montserrat', sans-serif; 
@@ -228,15 +229,17 @@ h1:after {
     min-height: 100vh;
     color: black;
     text-align: left;
-}
-
-.writing-examples {
     border-bottom: 80px solid lightgrey;
     border-left: 80px solid lightgrey;
     border-right: 80px solid lightgrey;
+}
+
+.writing-examples {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     min-height: 80vh;
     background-color: white;
-    color: red;
+    color: black;
 
 }
 /* --------ABOUT SECTION--------- */
